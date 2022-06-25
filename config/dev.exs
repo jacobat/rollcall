@@ -26,7 +26,8 @@ config :rollcall, RollcallWeb.Endpoint,
   secret_key_base: "LXWK8nQnzTydnAzOzkDs8zmpQkTJSns5VciI/bKTEnv6G/Ny9i6gZfXZs9F4ITNQ",
   watchers: [
     # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
-    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]}
+    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
+    tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
   ]
 
 # ## SSL Support
