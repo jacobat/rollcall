@@ -14,6 +14,8 @@ defmodule Rollcall.Application do
       RollcallWeb.Telemetry,
       # Start the PubSub system
       {Phoenix.PubSub, name: Rollcall.PubSub},
+      # Start presence
+      Rollcall.Presence,
       # Start the Endpoint (http/https)
       RollcallWeb.Endpoint
       # Start a worker by calling: Rollcall.Worker.start_link(arg)
